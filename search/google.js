@@ -4,14 +4,14 @@ var allData = require('./../data/allData');
 var search = function (value) {
 	var input = browser.element('.gsfi');
 	input.setValue(value);
+	browser.click('.sbico');
+	browser.waitForExist('#gsr');
 };
 
 var run = function(value) {
 	var timer = new NanoTimer();
 	var runtimeSeconds = timer.time(search, [value], 'n');
 	console.log(value + ' , ' + runtimeSeconds/1000000);
-	browser.click('.sbico');
-	browser.waitForExist('#gsr');
 	browser.pause(2000);
 };
 
