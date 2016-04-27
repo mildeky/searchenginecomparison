@@ -26,6 +26,7 @@ ylabel('Frequency')
 hold off
 print -depsc multiplegraphsraw
 print('multiplegraphsraw', '-dpdf')
+print('multiplegraphsraw', '-dpng')
 
 figure(2);
 subplot(2,2,1), histogram(log10(google), 200);
@@ -48,3 +49,4 @@ ylabel('Frequency')
 hold off
 print -depsc multiplegraphsnorm
 print('multiplegraphsnorm', '-dpdf')
+print('multiplegraphsnorm', '-dpng')

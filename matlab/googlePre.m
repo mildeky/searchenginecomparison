@@ -8,6 +8,7 @@ ylabel('Frequency')
 title('Histogram Relating the Frequency of Response Times for Google Search with Prefetching')
 print -depsc googlepreraw
 print('googlepreraw', '-dpdf')
+print('googlepreraw', '-dpng')
 
 datanormal = log10(data);
 figure(2); clf;
@@ -17,6 +18,7 @@ ylabel('Frequency')
 title('Histogram Relating the Frequency of Log10 Response Times for Google Search with Prefetching')
 print -depsc googleprenorm
 print('googleprenorm', '-dpdf')
+print('googleprenorm', '-dpng')
 
 mean = mean(datanormal);
 std = std(datanormal);
