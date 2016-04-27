@@ -1,0 +1,16 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nanotimer": "^0.3.14",
+    "wdio-mocha-framework": "^0.2.12",
+    "webdriverio": "^4.0.5"
+  }
+}
