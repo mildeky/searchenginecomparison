@@ -34,7 +34,7 @@ stdone = std(datanormalone);
 stdtwo = std(datanormaltwo);
 
 num = meanone-meantwo;
-denom = sqrt((stdone^2 / 1000) + (stdtwo^2 / 1000));
+denom = sqrt((stdone^2 / length(datanormalone)) + (stdtwo^2 / length(datanormaltwo)));
 z = (num) / (denom);
 
 if z > 0
@@ -44,3 +44,17 @@ else
 end
 
 end
+
+%rightthreeone = meanone+3*stdone;
+%leftthreeone = meanone-3*stdone;
+%rightthreetwo = meantwo+3*stdtwo;
+%leftthreetwo = meantwo-3*stdtwo;
+
+%datanormalone = removeoutliers(datanormalone, leftthreeone, rightthreeone);
+%datanormaltwo = removeoutliers(datanormaltwo, leftthreetwo, rightthreetwo);
+
+%meanone = mean(datanormalone);
+%meantwo = mean(datanormaltwo);
+
+%stdone = std(datanormalone);
+%stdtwo = std(datanormaltwo);
